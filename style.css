@@ -1,0 +1,47 @@
+body {
+  font: 18px Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #e5e5e5;
+}
+
+h1 {
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+figure {
+  margin: 0 0 2em 0;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  display: inline-block;
+}
+
+.Btn {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 1em 3em;
+  color: #fff;
+  background-color: darkorange;
+  border-radius: 5px;
+  font-weight: bolder;
+  transition: 0.2s opacity;
+}
+
+.Btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 3em;
+  background: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 2em;
+}
