@@ -1,47 +1,111 @@
-body {
-  font: 18px Verdana, sans-serif;
-  padding: 0;
-  margin: 0;
-  background: #e5e5e5;
+:root {
+  --lightblue: #cce5ff;
+  --blue: #0040dd;
+  --darkblue: #003acc;
+  --grey: #ececec;
+  --body: #000;
+  --bg: #fff;
+  --nav-bg: rgba(255, 255, 255, 0.8);
 }
 
-h1 {
-  margin-bottom: 0;
-  line-height: 30px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lightblue: #cce5ff;
+    --blue: #0040dd;
+    --darkblue: #003acc;
+    --grey: #1a1a1a;
+    --body: #fff;
+    --bg: #0d0d0d;
+    --nav-bg: rgba(13, 13, 13, 0.8);
+  }
 }
 
-figure {
-  margin: 0 0 2em 0;
-  border: 1px solid #e5e5e5;
-  padding: 10px;
-  display: inline-block;
-}
-
-.Btn {
-  text-decoration: none;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 1em 3em;
-  color: #fff;
-  background-color: darkorange;
-  border-radius: 5px;
-  font-weight: bolder;
-  transition: 0.2s opacity;
-}
-
-.Btn:hover {
-  opacity: 0.9;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2em 3em;
-  background: white;
-  min-height: 100vh;
+* {
   box-sizing: border-box;
 }
 
-p {
-  margin-bottom: 2em;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--body);
+  background-color: var(--bg);
+}
+
+section {
+  padding: 30px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2, p {
+  margin: 0 0 20px 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+.label, figcaption {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid var(--grey);
+  position: sticky;
+  top: 0;
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(7px);
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+figure {
+  margin: 0 0 40px;
+}
+
+figure img {
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--blue);
+  border-radius: 5px;
+  padding: 0.6em 4em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  transition: .2s background-color;
+  margin-bottom: 5px;
+}
+
+.button:hover {
+  background-color: var(--darkblue);
+}
+
+.button:focus {
+  outline: 2px solid var(--lightblue);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding-bottom: 40px;
 }

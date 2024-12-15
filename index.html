@@ -6,21 +6,73 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Replacr - String Replacement Utility</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
-  <div class="container">
+  <main>
     <header>
-      <h1>Replacr</h1>
-      <h2>String Replacement Utility for Windows</h2>
+      <div class="container">
+        <h1>Replacr</h1>
+      </div>
     </header>
-    <p>Replacr is a simple app that allows you to replace a pattern in a string and get the result in an output field. It is a convenient semi-automation utility when large amounts of repetitive replacement is needed and automation is not an option.</p>
-    <div>
+    <section class="container">
+      <svg class="mb-20" width="80" height="80" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="256" height="256" rx="15" fill="url(#paint0_linear_1_8)"/>
+          <g filter="url(#filter0_d_1_8)">
+            <path d="M59.5 109.8C80.8 108.9 96.25 113.1 105.85 122.4C115.45 131.4 120.25 142.35 120.25 155.25C120.25 168.75 115.9 179.85 107.2 188.55C98.5 196.95 87.4 201.15 73.9 201.15C61.9 201.15 51.25 197.25 41.95 189.45C32.65 181.65 28 170.4 28 155.7C28 148.8 29.2 142.35 31.6 136.35C34 130.35 36.85 124.8 40.15 119.7L83.8 54H130.6L88.3 155.7L59.5 109.8ZM157.6 109.8C178.9 108.9 194.35 113.1 203.95 122.4C213.55 131.4 218.35 142.35 218.35 155.25C218.35 168.75 214 179.85 205.3 188.55C196.6 196.95 185.5 201.15 172 201.15C160 201.15 149.35 197.25 140.05 189.45C130.75 181.65 126.1 170.4 126.1 155.7C126.1 148.8 127.3 142.35 129.7 136.35C132.1 130.35 134.95 124.8 138.25 119.7L181.9 54H228.7L186.4 155.7L157.6 109.8Z" fill="#A0D6FF"/>
+          </g>
+        <defs>
+        <filter id="filter0_d_1_8" x="26" y="53" width="208.7" height="155.15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dx="2" dy="3"/>
+          <feGaussianBlur stdDeviation="2"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_8"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_8" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_1_8" x1="7.21127" y1="6.18357" x2="258.529" y2="242.021" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#0078D4"/>
+          <stop offset="1" stop-color="#0068B7"/>
+        </linearGradient>
+        </defs>
+      </svg>
+        
+      <h2>String Replacement Utility for Windows</h2>
+      <p>Replacr is a simple app that allows you to replace a pattern in a string and get the result in an output field. It is a convenient utility when large amounts of repetitive replacement is needed and automation is not an option.</p>
+      <p>Replacement patterns can be created, stored and reused.</p>
+      <p>This application was created primarily for educational purposes.</p>
+    </section>
+    <section class="container">
+      <h2>Download</h2>
+      <h3>Windows</h3>
+      <a href="https://github.com/nikelaz/replacr/releases/download/1.1.0/replacr_v1.1_amd64.exe" download class="button">Download</a>
+      <div class="label">replacr_v1.1_amd64.exe | 49.4mb</div>
+    </section>
+    <section class="container">
+      <h2>Screenshots</h2>
       <figure>
-        <img src="images/replacr-preview.png" alt="Replacr preview" />
+        <img src="images/replacr-dashboard.webp" loading="eager" fetchpriority="high" alt="replacr dashboard screenshot" />
+        <figcaption>Fig 1. Application dashboard</figcaption>
       </figure>
-    </div>
-    <a href="files/replacr-setup.exe" download class="Btn">Download</a>
-    <h6>replacr-setup.exe | 540kb</h6>
-  </div>
+      <figure>
+        <img src="images/replacr-create-preset-view.webp" loading="lazy" alt="replacr create preset screenshot" />
+        <figcaption>Fig 2. Create a pattern preset dialog</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/replacr-presets-view.webp" loading="lazy" alt="replacr presets screenshot" />
+        <figcaption>Fig 3. Saved pattern presets</figcaption>
+      </figure>
+      <figure>
+        <img src="images/replacr-replacing-website-url-strings.webp" loading="lazy" alt="replacr replacing website url strings screenshot" />
+        <figcaption>Fig 4. Replacr used to replace staging/production website URLs</figcaption>
+      </figure>
+    </section>
+  </main>
+  <footer class="container">
+    <p>&copy; Nikola Lazarov 2024</p>
+  </footer>
 </body>
 </html>
