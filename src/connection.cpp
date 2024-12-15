@@ -5,14 +5,21 @@
 #include <QDebug>
 #include <QSqlQuery>
 #include <QStandardPaths>
+#include <QDir>
 
 Connection::Connection()
-{   
-    const QString DB_PATH = QDir::currentPath() + "/presets.db";
+{
+    QString appDataLocation = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QString expectedDbLocation = appDataLocation + "/presets.db";
+    const QString DB_PATH = appDataLocation + "/presets.db";
 
     if(!QFile::exists(DB_PATH))
     {
-        qDebug() << "File does not exist:" << DB_PATH;
+        if (!QDir(appDataLocation).exists()) {
+            QDir().mkdir(appDataLocation);
+        }
+        QFile::copy(QDir::currentPath() + "/presets-template.db", expectedDbLocation);
+        qDebug() << "Database file does not exist. Creating from template." << DB_PATH;
     }
 
     m_db = QSqlDatabase::addDatabase("QSQLITE");

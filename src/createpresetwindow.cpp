@@ -29,9 +29,9 @@ void CreatePresetWindow::on_buttonBox_accepted()
     // Create Preset
     QSqlRecord newPreset;
 
-    newPreset.insert(0, QSqlField("title", QVariant::String));
-    newPreset.insert(1, QSqlField("search_str", QVariant::String));
-    newPreset.insert(2, QSqlField("replace_str", QVariant::String));
+    newPreset.insert(0, QSqlField("title", QMetaType::fromType<QString>()));
+    newPreset.insert(1, QSqlField("search_str", QMetaType::fromType<QString>()));
+    newPreset.insert(2, QSqlField("replace_str", QMetaType::fromType<QString>()));
 
     newPreset.setValue("title", title);
     newPreset.setValue("search_str", search_str);

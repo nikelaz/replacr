@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Replacr</DisplayName>
+    <Description>The string replacement utility</Description>
+    <Version>1.1</Version>
+    <ReleaseDate>2024-12-15</ReleaseDate>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+</Package>

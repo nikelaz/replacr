@@ -45,7 +45,7 @@ void MainWindow::on_pushButton_clicked()
     openPresetsWindow();
 }
 
-void MainWindow::on_presetComboBox_currentIndexChanged(int index)
+void MainWindow::on_presetComboBox_currentIndexChanged()
 {
     updateActivePreset();
 }

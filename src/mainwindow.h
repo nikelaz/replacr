@@ -23,7 +23,7 @@ private slots:
 
     void on_pushButton_clicked();
 
-    void on_presetComboBox_currentIndexChanged(int index);
+    void on_presetComboBox_currentIndexChanged();
 
     void on_actionManage_Presets_triggered();
 

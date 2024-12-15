@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Replacr</Name>
+    <Version>1.0.0</Version>
+    <Title>Replacr Installer</Title>
+    <Publisher>Nikola Lazarov</Publisher>
+    <StartMenuDir>Replacr</StartMenuDir>
+    <TargetDir>@ApplicationsDir@/Replacr</TargetDir>
+    <RunProgram>@TargetDir@/replacr.exe</RunProgram>
+</Installer>
